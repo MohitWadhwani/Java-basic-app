@@ -1,9 +1,9 @@
 pipeline {
     agent any
-    environment {
-    mavenHome = tool name:'M2',type:'maven'
-	mavencmd= "${mavenHome}/bin/mvn"
-	}
+    tools {
+        // Specify the Maven installation
+        maven 'M2'
+    }
     stages {
         stage("Git code") {
             steps {
