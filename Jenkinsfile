@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage("Git code") {
             steps {
-            bat label: '', script: 'git clone https://github.com/MohitWadhwani/Java-basic-app.git'
+            bat label: '', script: 'dir'
             }
         }
 
